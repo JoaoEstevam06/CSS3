@@ -41,3 +41,47 @@
 	/*text-shadow: 20px 20px rgba(0, 0, 0, 0.5);*/
 	text-shadow: 4px 4px 10px black;
 }
+
+/*********************ANIMACOES/*********************/
+@keyframes animacao_box{
+
+	from{
+		background: red; 
+		border-radius: 0px; 
+		top: 0; 
+		left: 0;
+	}
+	to{
+		background: yellow; 
+		border-radius: 300px; 
+		top: 220; 
+		left: 200;}
+
+}
+
+#box_animacao{
+	width: 300px;
+	height: 300px;
+	background: red;
+	position: relative;
+
+	/*animation-name: animacao_box;
+	animation-duration: 5s;
+	animation-delay: 3s;
+	animation-iteration-count: 2;
+	animation-direction: alternate;*/
+
+	animation: animacao_box 5s 3s 2 alternate;
+}
+
+#box_transicao{
+	width: 300px;
+	height: 300px;
+	background: orange;
+}
+
+#box_transicao:hover{
+	width: 400px;
+	background: black;
+	transition: all 2s;
+}
